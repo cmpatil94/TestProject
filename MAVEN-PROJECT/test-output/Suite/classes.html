@@ -1,0 +1,1628 @@
+<html>
+<head>
+<title>TestNG:  classes</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>classes</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/33</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 03 12:38:09 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>1 seconds (1172 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestNG.TestNG_AMAZON.LaunchBrowser()'><b>LaunchBrowser</b><br>Test class: TestNG.TestNG_AMAZON</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace485218607", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace485218607'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_AMAZON@1d2adfbe</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.e()'><b>e</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FLIPKART.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_FLIPKART</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_FLIPKART@79e2c065</td></tr>
+<tr>
+<td title='TestNG.TestNG_IRCTC.e()'><b>e</b><br>Test class: TestNG.TestNG_IRCTC</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_IRCTC@8f4ea7c</td></tr>
+<tr>
+<td title='TestNG.TestNG_YOUTUBE.b()'><b>b</b><br>Test class: TestNG.TestNG_YOUTUBE</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_YOUTUBE@223d2c72</td></tr>
+<tr>
+<td title='TestNG.TestNG_TESTAUTOMATION.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_TESTAUTOMATION</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_TESTAUTOMATION@36902638</td></tr>
+<tr>
+<td title='TestNG.TestNG_YOUTUBE.CloseBrowser()'><b>CloseBrowser</b><br>Test class: TestNG.TestNG_YOUTUBE</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_YOUTUBE@223d2c72</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.e()'><b>e</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.e()'><b>e</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.e()'><b>e</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.e()'><b>e</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.e()'><b>e</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_AMAZON.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_AMAZON</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_AMAZON@1d2adfbe</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.e()'><b>e</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_TESTAUTOMATION.LaunchBrowser()'><b>LaunchBrowser</b><br>Test class: TestNG.TestNG_TESTAUTOMATION</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_TESTAUTOMATION@36902638</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_IRCTC.b()'><b>b</b><br>Test class: TestNG.TestNG_IRCTC</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_IRCTC@8f4ea7c</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_YOUTUBE.LaunchBrowser()'><b>LaunchBrowser</b><br>Test class: TestNG.TestNG_YOUTUBE</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_YOUTUBE@223d2c72</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_AMAZON.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_AMAZON</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_AMAZON@1d2adfbe</td></tr>
+<tr>
+<td title='TestNG.TestNG_IRCTC.a()'><b>a</b><br>Test class: TestNG.TestNG_IRCTC</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_IRCTC@8f4ea7c</td></tr>
+<tr>
+<td title='TestNG.TestNG_AMAZON.e()'><b>e</b><br>Test class: TestNG.TestNG_AMAZON</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_AMAZON@1d2adfbe</td></tr>
+<tr>
+<td title='TestNG.TestNG_AMAZON.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_AMAZON</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_AMAZON@1d2adfbe</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FLIPKART.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_FLIPKART</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_FLIPKART@79e2c065</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.CloseBrowser()'><b>CloseBrowser</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_IRCTC.b()'><b>b</b><br>Test class: TestNG.TestNG_IRCTC</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_IRCTC@8f4ea7c</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.e()'><b>e</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FLIPKART.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_FLIPKART</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_FLIPKART@79e2c065</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FLIPKART.RemoveObject()'><b>RemoveObject</b><br>Test class: TestNG.TestNG_FLIPKART</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_FLIPKART@79e2c065</td></tr>
+<tr>
+<td title='TestNG.TestNG_YOUTUBE.a()'><b>a</b><br>Test class: TestNG.TestNG_YOUTUBE</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_YOUTUBE@223d2c72</td></tr>
+<tr>
+<td title='TestNG.TestNG_YOUTUBE.e()'><b>e</b><br>Test class: TestNG.TestNG_YOUTUBE</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_YOUTUBE@223d2c72</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.e()'><b>e</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_TESTAUTOMATION.CreatePOMObject()'><b>CreatePOMObject</b><br>Test class: TestNG.TestNG_TESTAUTOMATION</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_TESTAUTOMATION@36902638</td></tr>
+<tr>
+<td title='TestNG.TestNG_IRCTC.RemoveObject()'><b>RemoveObject</b><br>Test class: TestNG.TestNG_IRCTC</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_IRCTC@8f4ea7c</td></tr>
+<tr>
+<td title='TestNG.TestNG_FLIPKART.LaunchBrowser()'><b>LaunchBrowser</b><br>Test class: TestNG.TestNG_FLIPKART</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_FLIPKART@79e2c065</td></tr>
+<tr>
+<td title='TestNG.TestNG_FLIPKART.CreatePOMObject()'><b>CreatePOMObject</b><br>Test class: TestNG.TestNG_FLIPKART</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_FLIPKART@79e2c065</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.e()'><b>e</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.RemoveObject()'><b>RemoveObject</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.LaunchBrowser()'><b>LaunchBrowser</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.e()'><b>e</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.e()'><b>e</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_TESTAUTOMATION.CloseBrowser()'><b>CloseBrowser</b><br>Test class: TestNG.TestNG_TESTAUTOMATION</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_TESTAUTOMATION@36902638</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.CreatePOMObject()'><b>CreatePOMObject</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FLIPKART.CloseBrowser()'><b>CloseBrowser</b><br>Test class: TestNG.TestNG_FLIPKART</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FLIPKART@79e2c065</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.e()'><b>e</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.e()'><b>e</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_AMAZON.e()'><b>e</b><br>Test class: TestNG.TestNG_AMAZON</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_AMAZON@1d2adfbe</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.e()'><b>e</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_AMAZON.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_AMAZON</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_AMAZON@1d2adfbe</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FLIPKART.e()'><b>e</b><br>Test class: TestNG.TestNG_FLIPKART</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_FLIPKART@79e2c065</td></tr>
+<tr>
+<td title='TestNG.TestNG_FLIPKART.e()'><b>e</b><br>Test class: TestNG.TestNG_FLIPKART</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_FLIPKART@79e2c065</td></tr>
+<tr>
+<td title='TestNG.TestNG_AMAZON.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_AMAZON</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_AMAZON@1d2adfbe</td></tr>
+<tr>
+<td title='TestNG.TestNG_AMAZON.e()'><b>e</b><br>Test class: TestNG.TestNG_AMAZON</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_AMAZON@1d2adfbe</td></tr>
+<tr>
+<td title='TestNG.TestNG_TESTAUTOMATION.e()'><b>e</b><br>Test class: TestNG.TestNG_TESTAUTOMATION</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_TESTAUTOMATION@36902638</td></tr>
+<tr>
+<td title='TestNG.TestNG_AMAZON.CreatePOMObject()'><b>CreatePOMObject</b><br>Test class: TestNG.TestNG_AMAZON</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_AMAZON@1d2adfbe</td></tr>
+<tr>
+<td title='TestNG.TestNG_TESTAUTOMATION.RemoveObject()'><b>RemoveObject</b><br>Test class: TestNG.TestNG_TESTAUTOMATION</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_TESTAUTOMATION@36902638</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_YOUTUBE.RemoveObject()'><b>RemoveObject</b><br>Test class: TestNG.TestNG_YOUTUBE</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_YOUTUBE@223d2c72</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_AMAZON.CloseBrowser()'><b>CloseBrowser</b><br>Test class: TestNG.TestNG_AMAZON</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_AMAZON@1d2adfbe</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_YOUTUBE.b()'><b>b</b><br>Test class: TestNG.TestNG_YOUTUBE</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_YOUTUBE@223d2c72</td></tr>
+<tr>
+<td title='TestNG.TestNG_IRCTC.LaunchBrowser()'><b>LaunchBrowser</b><br>Test class: TestNG.TestNG_IRCTC</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_IRCTC@8f4ea7c</td></tr>
+<tr>
+<td title='TestNG.TestNG_AMAZON.e()'><b>e</b><br>Test class: TestNG.TestNG_AMAZON</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_AMAZON@1d2adfbe</td></tr>
+<tr>
+<td title='TestNG.TestNG_IRCTC.CloseBrowser()'><b>CloseBrowser</b><br>Test class: TestNG.TestNG_IRCTC</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_IRCTC@8f4ea7c</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.OpenWebSite()'><b>OpenWebSite</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_AMAZON.RemoveObject()'><b>RemoveObject</b><br>Test class: TestNG.TestNG_AMAZON</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_AMAZON@1d2adfbe</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.e()'><b>e</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.e()'><b>e</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_IRCTC.e()'><b>e</b><br>Test class: TestNG.TestNG_IRCTC</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_IRCTC@8f4ea7c</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.e()'><b>e</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_YOUTUBE.e()'><b>e</b><br>Test class: TestNG.TestNG_YOUTUBE</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_YOUTUBE@223d2c72</td></tr>
+<tr>
+<td title='TestNG.TestNG_AMAZON.e()'><b>e</b><br>Test class: TestNG.TestNG_AMAZON</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_AMAZON@1d2adfbe</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.e()'><b>e</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.e()'><b>e</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td></td>
+<td>-1664780890</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FLIPKART.e()'><b>e</b><br>Test class: TestNG.TestNG_FLIPKART</td>
+<td></td>
+<td>-1664780889</td>
+<td>TestNG.TestNG_FLIPKART@79e2c065</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.c6()'><b>c6</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1803502524", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1803502524'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_IRCTC.d()'><b>d</b><br>Test class: TestNG.TestNG_IRCTC</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1482796962", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1482796962'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_IRCTC@8f4ea7c</td></tr>
+<tr>
+<td title='TestNG.TestNG_IRCTC.c()'><b>c</b><br>Test class: TestNG.TestNG_IRCTC</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1812949515", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1812949515'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_IRCTC@8f4ea7c</td></tr>
+<tr>
+<td title='TestNG.TestNG_YOUTUBE.Open_Rashmika_TopTucker_Song()'><b>Open_Rashmika_TopTucker_Song</b><br>Test class: TestNG.TestNG_YOUTUBE</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1822948960", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1822948960'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_YOUTUBE@223d2c72</td></tr>
+<tr>
+<td title='TestNG.TestNG_AMAZON.c4()'><b>c4</b><br>Test class: TestNG.TestNG_AMAZON</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1427946644", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1427946644'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_AMAZON@1d2adfbe</td></tr>
+<tr>
+<td title='TestNG.TestNG_AMAZON.c1()'><b>c1</b><br>Test class: TestNG.TestNG_AMAZON</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace847837635", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace847837635'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_AMAZON@1d2adfbe</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.c4()'><b>c4</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1044410508", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1044410508'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.c11()'><b>c11</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1382136178", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1382136178'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_AMAZON.c5()'><b>c5</b><br>Test class: TestNG.TestNG_AMAZON</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1274685869", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1274685869'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_AMAZON@1d2adfbe</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.c7()'><b>c7</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1271756183", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1271756183'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.c14()'><b>c14</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1085983399", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1085983399'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_AMAZON.c3()'><b>c3</b><br>Test class: TestNG.TestNG_AMAZON</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1088650877", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1088650877'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_AMAZON@1d2adfbe</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.c15()'><b>c15</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace383367097", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace383367097'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.c2()'><b>c2</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace620985323", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace620985323'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FLIPKART.FlipkartKeyboardPage()'><b>FlipkartKeyboardPage</b><br>Test class: TestNG.TestNG_FLIPKART</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1978894746", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1978894746'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_FLIPKART@79e2c065</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.c16()'><b>c16</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace977689453", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace977689453'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.c18()'><b>c18</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace964119068", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace964119068'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.c1()'><b>c1</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace364696081", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace364696081'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FLIPKART.FlipkartLogingPage()'><b>FlipkartLogingPage</b><br>Test class: TestNG.TestNG_FLIPKART</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace807671243", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace807671243'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_FLIPKART@79e2c065</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.c5()'><b>c5</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1469506278", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1469506278'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.c10()'><b>c10</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace726506556", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace726506556'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FLIPKART.FlipkartGroceryPage()'><b>FlipkartGroceryPage</b><br>Test class: TestNG.TestNG_FLIPKART</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1273914141", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1273914141'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_FLIPKART@79e2c065</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.c3()'><b>c3</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1340821528", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1340821528'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_AMAZON.c2()'><b>c2</b><br>Test class: TestNG.TestNG_AMAZON</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1588934913", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1588934913'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_AMAZON@1d2adfbe</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.c20()'><b>c20</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1223878854", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1223878854'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.c13()'><b>c13</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace832393064", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace832393064'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_TESTAUTOMATION.TestAutomationPage()'><b>TestAutomationPage</b><br>Test class: TestNG.TestNG_TESTAUTOMATION</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace185589496", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace185589496'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_TESTAUTOMATION@36902638</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.c8()'><b>c8</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1823662345", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1823662345'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_YOUTUBE.Open_Radhe_Radhe()'><b>Open_Radhe_Radhe</b><br>Test class: TestNG.TestNG_YOUTUBE</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace164226738", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace164226738'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_YOUTUBE@223d2c72</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.c12()'><b>c12</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace235973356", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace235973356'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.c17()'><b>c17</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace856002617", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace856002617'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.c19()'><b>c19</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace901112331", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace901112331'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+<tr>
+<td title='TestNG.TestNG_FACEBOOK_OG_IN.c9()'><b>c9</b><br>Test class: TestNG.TestNG_FACEBOOK_OG_IN</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1769606084", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1769606084'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
+in C:\Users\Admin\eclipse-workspace\MAVEN-PROJECT\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.TestNG_FACEBOOK_OG_IN@436813f3</td></tr>
+</table><p>
+</body>
+</html>
