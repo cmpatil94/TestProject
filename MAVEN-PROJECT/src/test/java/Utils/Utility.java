@@ -2,19 +2,12 @@ package Utils;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-
 import org.apache.poi.EncryptedDocumentException;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.bouncycastle.openssl.EncryptionException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -22,8 +15,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.io.FileHandler;
-import org.testng.annotations.DataProvider;
-import org.testng.util.Strings;
+
 
 public class Utility {
 	
@@ -71,7 +63,7 @@ public class Utility {
 	public static void CaptureScreenshot(WebDriver driver , int testID)  throws IOException  {
 		
 	
-	String Date = new SimpleDateFormat("dd-MM-yyyy-hh;mm;ss").format(Calendar.getInstance().getTime());
+	String Date = new SimpleDateFormat("dd-MM-yyyy hh.mm.ss").format(Calendar.getInstance().getTime());
     
 	String a = Date + ".jpg";
 	
@@ -115,8 +107,6 @@ public class Utility {
 		
 		}
 		return CellValue;
-		
-		
 		
 		
 	}
