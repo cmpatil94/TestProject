@@ -12,10 +12,17 @@ import MAVEN_EMI_CALCULATOR.TESTAUTOMATION;
 
 public class TEST_TESTAUTOMATION {
 	
-	WebDriver driver;
+	private WebDriver driver;
+	
+	static ExtentTest test;
+	static ExtentHtmlReporter reporter;
 	
 	
 public static void main(String[] args) throws InterruptedException {
+		
+		reporter = new ExtentHtmlReporter("test-output/ExtendReport/Extent.html");
+		ExtentReports extend = new ExtentReports();
+		extend.attachReporter(reporter);
 		
 		
 		System.setProperty("webdriver.chrome.driver", "E:\\INSTALL\\SELENIUM\\chromedriver.exe");

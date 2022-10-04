@@ -12,11 +12,21 @@ import MAVEN_AMAZON.AMAZON_LOG_IN_MOBILE_SELECT;
 import MAVEN_AMAZON.AMAZON_ONEPLUS_BUY;
 import MAVEN_AMAZON.AMAZON_ONEPLUS_NORD;
 
+
 public class TEST_AMAZON {
 	
-public static void main(String[] args) {
 		
+		static ExtentTest test;
+		static ExtentHtmlReporter reporter;
+	
+	public static void main(String[] args) {
 		
+		reporter = new ExtentHtmlReporter("test-output/ExtendReport/Extent.html");
+		ExtentReports extend = new ExtentReports();
+		extend.attachReporter(reporter);
+			
+			
+			
 		System.setProperty("webdriver.chrome.driver", "E:\\INSTALL\\SELENIUM\\chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver();

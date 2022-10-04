@@ -13,12 +13,22 @@ import org.openqa.selenium.io.FileHandler;
 
 import MAVEN_FACEBOOK.FACEBOOK_LOG_IN_OR_SIGN_UP;
 
+
+
+
 public class TEST_FACEBOOK_LOG_IN {
 	
+		static ExtentTest test;
+		static ExtentHtmlReporter reporter;
 	
 	public static void main(String[] args) throws IOException, InterruptedException {
 		
 		
+		reporter = new ExtentHtmlReporter("test-output/ExtendReport/Extent.html");
+		ExtentReports extend = new ExtentReports();
+		extend.attachReporter(reporter);
+				
+				
 		System.setProperty("webdriver.chrome.driver", "E:\\INSTALL\\SELENIUM\\chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver();
