@@ -3,29 +3,22 @@
 <suite name="Suite" thread-count="1" parallel ="classes">
 
 	<listeners>
-		<listener class-name="extendReport.ExtentTestNGIReporterListener" />
+		<listener class-name = "extendReport.ExtentTestNGIReporterListener"/>
 	</listeners>
+	
 
   <test  name="Chrome">
     <classes>
-      <class name="TestNG.TestNG_FLIPKART"/>
-      <class name="TestNG.TestNG_AMAZON"/>
       <class name="TestNG.TestNG_TESTAUTOMATION"/>
-      <class name="TestNG.TestNG_YOUTUBE"/>
-      <class name="TestNG.TestNG_IRCTC"/>
-      <class name="TestNG.TestNG_FACEBOOK_OG_IN"/>
     </classes>
   </test> <!-- Test -->
+  
   
    <test  name="FirefoxTest">
     <parameter name="BrowserName" value="Firefox"/>
     <classes> 
-     <class name="TestNG.TestNG_FLIPKART"/>
-      <class name="TestNG.TestNG_AMAZON"/>
+     
       <class name="TestNG.TestNG_TESTAUTOMATION"/>
-      <class name="TestNG.TestNG_YOUTUBE"/>
-      <class name="TestNG.TestNG_IRCTC"/>
-      <class name="TestNG.TestNG_FACEBOOK_OG_IN"/>
     </classes>
   </test> <!-- Test -->
   
@@ -33,12 +26,9 @@
   <test name="MicrosoftEdgeTest">
     <parameter name="BrowserName" value="MicrosoftEdge"/>
     <classes> 
-      <class name="TestNG.TestNG_FLIPKART"/>
-      <class name="TestNG.TestNG_AMAZON"/>
+      
       <class name="TestNG.TestNG_TESTAUTOMATION"/>
-      <class name="TestNG.TestNG_YOUTUBE"/>
-      <class name="TestNG.TestNG_IRCTC"/>
-      <class name="TestNG.TestNG_FACEBOOK_OG_IN"/>
+ 
     </classes>
   </test> <!-- Test -->
   

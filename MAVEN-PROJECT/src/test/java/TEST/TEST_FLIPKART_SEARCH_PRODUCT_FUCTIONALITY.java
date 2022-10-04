@@ -5,6 +5,10 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
 import MAVEN_FLIPKART.FLIPKART_SEARCH_PRODUCT_DETAIL_FUCTIONALTY;
 
 

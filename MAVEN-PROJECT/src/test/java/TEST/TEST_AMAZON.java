@@ -6,6 +6,10 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
 import MAVEN_AMAZON.AMAZON_CROME_WASHING_MACHINE;
 import MAVEN_AMAZON.AMAZON_HOME_PAGE;
 import MAVEN_AMAZON.AMAZON_LOG_IN_MOBILE_SELECT;

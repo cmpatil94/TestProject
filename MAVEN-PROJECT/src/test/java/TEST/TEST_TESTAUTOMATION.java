@@ -8,6 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
 import MAVEN_EMI_CALCULATOR.TESTAUTOMATION;
 
 public class TEST_TESTAUTOMATION {
