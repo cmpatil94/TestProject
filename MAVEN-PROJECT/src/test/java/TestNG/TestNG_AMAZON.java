@@ -178,6 +178,9 @@ public class TestNG_AMAZON {
 		
 		amazonhomepage.ClickOnAmazonHome();
 		
+		
+		try
+		{
 		amazonhomepage.ClickOnCreateAccount();
 		
 		amazonhomepage.ClickOnCode();
@@ -186,6 +189,11 @@ public class TestNG_AMAZON {
 		
 		String URL = driver.getCurrentUrl();
 		System.out.println(URL);
+		}
+		catch(Exception e)
+		{
+			System.out.println("Exception");
+		}
 		
 	}
 	

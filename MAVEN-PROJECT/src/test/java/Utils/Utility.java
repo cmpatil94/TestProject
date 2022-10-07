@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import org.apache.poi.EncryptedDocumentException;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -22,8 +21,6 @@ public class Utility {
 	private WebDriver driver;
 	
 	private XSSFWorkbook Workbook ;
-
-	private XSSFSheet Sheet ;
 	
 	private static String CellValue ;
 	
@@ -97,7 +94,6 @@ public class Utility {
 		{
 			CellValue = Workbook.getSheet(SheetName).getRow(row).getCell(cell).getStringCellValue();
 	
-			
 		}
 		catch(Exception e)
 		{

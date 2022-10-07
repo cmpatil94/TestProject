@@ -3,19 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG.TestNG_FLIPKART">
+      <class name="TestNG.TestNG_TESTAUTOMATION">
         <methods>
-          <include name="CloseBrowser"/>
-          <include name="FlipkartKeyboardPage"/>
-          <include name="FlipkartLogingPage"/>
-          <include name="OpenWebSite"/>
           <include name="RemoveObject"/>
-          <include name="e"/>
-          <include name="LaunchBrowser"/>
+          <include name="OpenWebSite"/>
+          <include name="CloseBrowser"/>
+          <include name="TestAutomationPage"/>
           <include name="CreatePOMObject"/>
-          <include name="FlipkartGroceryPage"/>
+          <include name="LaunchBrowser"/>
+          <include name="e"/>
         </methods>
-      </class> <!-- TestNG.TestNG_FLIPKART -->
+      </class> <!-- TestNG.TestNG_TESTAUTOMATION -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,11 +1,11 @@
 package extendReport;
 
-
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
+import org.testng.IReporter;
 import org.testng.IResultMap;
 import org.testng.ISuite;
 import org.testng.ISuiteResult;
@@ -21,7 +21,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-public class ExtentTestNGIReporterListener {
+public class ExtentTestNGIReporterListener implements IReporter {
 	
 		private static final String OUTPUT_FOLDER = "test-output/ExtendReport/";
 	    private static final String FILE_NAME = "Extent.html";

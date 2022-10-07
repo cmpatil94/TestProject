@@ -8,8 +8,10 @@
 	
 
   <test  name="Chrome">
+   <parameter name="BrowserName" value="Chrome"/>
     <classes>
       <class name="TestNG.TestNG_TESTAUTOMATION"/>
+      
     </classes>
   </test> <!-- Test -->
   
@@ -17,8 +19,8 @@
    <test  name="FirefoxTest">
     <parameter name="BrowserName" value="Firefox"/>
     <classes> 
-     
       <class name="TestNG.TestNG_TESTAUTOMATION"/>
+      
     </classes>
   </test> <!-- Test -->
   
@@ -26,9 +28,8 @@
   <test name="MicrosoftEdgeTest">
     <parameter name="BrowserName" value="MicrosoftEdge"/>
     <classes> 
-      
       <class name="TestNG.TestNG_TESTAUTOMATION"/>
- 
+       
     </classes>
   </test> <!-- Test -->
   

@@ -1,113 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="0" skipped="1">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-04T16:14:17 IST" name="Suite" finished-at="2022-10-04T16:16:11 IST" duration-ms="113782">
+  <suite started-at="2022-10-07T12:30:51 IST" name="Suite" finished-at="2022-10-07T12:34:08 IST" duration-ms="196561">
     <groups>
     </groups>
-    <test started-at="2022-10-04T16:14:17 IST" name="Chrome" finished-at="2022-10-04T16:14:18 IST" duration-ms="141">
+    <test started-at="2022-10-07T12:30:51 IST" name="Chrome" finished-at="2022-10-07T12:32:03 IST" duration-ms="71573">
       <class name="TestNG.TestNG_TESTAUTOMATION">
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String)[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@4f18837a]" started-at="2022-10-04T16:14:18 IST" name="LaunchBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1664880258000" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'BrowserName' is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
-in C:\Users\Admin\git\TestProject\MAVEN-PROJECT\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'BrowserName' is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
-in C:\Users\Admin\git\TestProject\MAVEN-PROJECT\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String)[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@130161f7]" started-at="2022-10-07T12:30:51 IST" name="LaunchBrowser" finished-at="2022-10-07T12:30:59 IST" duration-ms="8079" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method is-config="true" signature="CreatePOMObject()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@4f18837a]" started-at="2022-10-04T16:14:18 IST" name="CreatePOMObject" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1664880258050" status="SKIP">
+        <test-method is-config="true" signature="CreatePOMObject()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@130161f7]" started-at="2022-10-07T12:30:59 IST" name="CreatePOMObject" finished-at="2022-10-07T12:31:00 IST" duration-ms="331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreatePOMObject -->
-        <test-method is-config="true" signature="OpenWebSite()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@4f18837a]" started-at="2022-10-04T16:14:18 IST" name="OpenWebSite" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1664880258080" status="SKIP">
+        <test-method is-config="true" signature="OpenWebSite()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@130161f7]" started-at="2022-10-07T12:31:00 IST" name="OpenWebSite" finished-at="2022-10-07T12:31:50 IST" duration-ms="50700" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenWebSite -->
-        <test-method signature="TestAutomationPage()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@4f18837a]" started-at="2022-10-04T16:14:18 IST" name="TestAutomationPage" finished-at="2022-10-04T16:14:18 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'BrowserName' is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
-in C:\Users\Admin\git\TestProject\MAVEN-PROJECT\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'BrowserName' is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
-in C:\Users\Admin\git\TestProject\MAVEN-PROJECT\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="TestAutomationPage()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@130161f7]" started-at="2022-10-07T12:31:50 IST" name="TestAutomationPage" finished-at="2022-10-07T12:32:00 IST" duration-ms="9410" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestAutomationPage -->
-        <test-method is-config="true" signature="e(org.testng.ITestResult)[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@4f18837a]" started-at="2022-10-04T16:14:18 IST" name="e" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1664880258101" status="SKIP">
+        <test-method is-config="true" signature="e(org.testng.ITestResult)[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@130161f7]" started-at="2022-10-07T12:32:00 IST" name="e" finished-at="2022-10-07T12:32:00 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TestAutomationPage status=SUCCESS method=TestNG_TESTAUTOMATION.TestAutomationPage()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@130161f7] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- e -->
-        <test-method is-config="true" signature="RemoveObject()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@4f18837a]" started-at="2022-10-04T16:14:18 IST" name="RemoveObject" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1664880258120" status="SKIP">
+        <test-method is-config="true" signature="RemoveObject()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@130161f7]" started-at="2022-10-07T12:32:00 IST" name="RemoveObject" finished-at="2022-10-07T12:32:00 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RemoveObject -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@4f18837a]" started-at="2022-10-04T16:14:18 IST" name="CloseBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1664880258124" status="SKIP">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@130161f7]" started-at="2022-10-07T12:32:00 IST" name="CloseBrowser" finished-at="2022-10-07T12:32:03 IST" duration-ms="2935" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- TestNG.TestNG_TESTAUTOMATION -->
     </test> <!-- Chrome -->
-    <test started-at="2022-10-04T16:14:18 IST" name="FirefoxTest" finished-at="2022-10-04T16:15:08 IST" duration-ms="49864">
+    <test started-at="2022-10-07T12:32:03 IST" name="FirefoxTest" finished-at="2022-10-07T12:32:53 IST" duration-ms="50192">
       <class name="TestNG.TestNG_TESTAUTOMATION">
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String)[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@1b7cc17c]" started-at="2022-10-04T16:14:18 IST" name="LaunchBrowser" finished-at="2022-10-04T16:14:47 IST" duration-ms="28692" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String)[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@4d9e68d0]" started-at="2022-10-07T12:32:03 IST" name="LaunchBrowser" finished-at="2022-10-07T12:32:34 IST" duration-ms="30743" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -118,42 +64,42 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method is-config="true" signature="CreatePOMObject()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@1b7cc17c]" started-at="2022-10-04T16:14:47 IST" name="CreatePOMObject" finished-at="2022-10-04T16:14:47 IST" duration-ms="48" status="PASS">
+        <test-method is-config="true" signature="CreatePOMObject()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@4d9e68d0]" started-at="2022-10-07T12:32:34 IST" name="CreatePOMObject" finished-at="2022-10-07T12:32:34 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreatePOMObject -->
-        <test-method is-config="true" signature="OpenWebSite()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@1b7cc17c]" started-at="2022-10-04T16:14:47 IST" name="OpenWebSite" finished-at="2022-10-04T16:14:58 IST" duration-ms="11594" status="PASS">
+        <test-method is-config="true" signature="OpenWebSite()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@4d9e68d0]" started-at="2022-10-07T12:32:34 IST" name="OpenWebSite" finished-at="2022-10-07T12:32:43 IST" duration-ms="9232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenWebSite -->
-        <test-method signature="TestAutomationPage()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@1b7cc17c]" started-at="2022-10-04T16:14:58 IST" name="TestAutomationPage" finished-at="2022-10-04T16:15:06 IST" duration-ms="7176" status="PASS">
+        <test-method signature="TestAutomationPage()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@4d9e68d0]" started-at="2022-10-07T12:32:43 IST" name="TestAutomationPage" finished-at="2022-10-07T12:32:51 IST" duration-ms="7833" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestAutomationPage -->
-        <test-method is-config="true" signature="e(org.testng.ITestResult)[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@1b7cc17c]" started-at="2022-10-04T16:15:06 IST" name="e" finished-at="2022-10-04T16:15:06 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="e(org.testng.ITestResult)[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@4d9e68d0]" started-at="2022-10-07T12:32:51 IST" name="e" finished-at="2022-10-07T12:32:51 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestAutomationPage status=SUCCESS method=TestNG_TESTAUTOMATION.TestAutomationPage()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@1b7cc17c] output={null}]]]>
+                <![CDATA[[TestResult name=TestAutomationPage status=SUCCESS method=TestNG_TESTAUTOMATION.TestAutomationPage()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@4d9e68d0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- e -->
-        <test-method is-config="true" signature="RemoveObject()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@1b7cc17c]" started-at="2022-10-04T16:15:06 IST" name="RemoveObject" finished-at="2022-10-04T16:15:06 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="RemoveObject()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@4d9e68d0]" started-at="2022-10-07T12:32:51 IST" name="RemoveObject" finished-at="2022-10-07T12:32:51 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RemoveObject -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@1b7cc17c]" started-at="2022-10-04T16:15:06 IST" name="CloseBrowser" finished-at="2022-10-04T16:15:08 IST" duration-ms="2335" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@4d9e68d0]" started-at="2022-10-07T12:32:51 IST" name="CloseBrowser" finished-at="2022-10-07T12:32:53 IST" duration-ms="2369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- TestNG.TestNG_TESTAUTOMATION -->
     </test> <!-- FirefoxTest -->
-    <test started-at="2022-10-04T16:15:08 IST" name="MicrosoftEdgeTest" finished-at="2022-10-04T16:16:11 IST" duration-ms="63358">
+    <test started-at="2022-10-07T12:32:53 IST" name="MicrosoftEdgeTest" finished-at="2022-10-07T12:34:08 IST" duration-ms="74588">
       <class name="TestNG.TestNG_TESTAUTOMATION">
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String)[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@72967906]" started-at="2022-10-04T16:15:08 IST" name="LaunchBrowser" finished-at="2022-10-04T16:15:16 IST" duration-ms="8172" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String)[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@7fa98a66]" started-at="2022-10-07T12:32:53 IST" name="LaunchBrowser" finished-at="2022-10-07T12:33:06 IST" duration-ms="12777" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -164,34 +110,34 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method is-config="true" signature="CreatePOMObject()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@72967906]" started-at="2022-10-04T16:15:16 IST" name="CreatePOMObject" finished-at="2022-10-04T16:15:16 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="CreatePOMObject()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@7fa98a66]" started-at="2022-10-07T12:33:06 IST" name="CreatePOMObject" finished-at="2022-10-07T12:33:06 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreatePOMObject -->
-        <test-method is-config="true" signature="OpenWebSite()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@72967906]" started-at="2022-10-04T16:15:16 IST" name="OpenWebSite" finished-at="2022-10-04T16:16:05 IST" duration-ms="48841" status="PASS">
+        <test-method is-config="true" signature="OpenWebSite()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@7fa98a66]" started-at="2022-10-07T12:33:06 IST" name="OpenWebSite" finished-at="2022-10-07T12:33:59 IST" duration-ms="52966" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenWebSite -->
-        <test-method signature="TestAutomationPage()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@72967906]" started-at="2022-10-04T16:16:05 IST" name="TestAutomationPage" finished-at="2022-10-04T16:16:11 IST" duration-ms="5978" status="PASS">
+        <test-method signature="TestAutomationPage()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@7fa98a66]" started-at="2022-10-07T12:33:59 IST" name="TestAutomationPage" finished-at="2022-10-07T12:34:07 IST" duration-ms="8190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestAutomationPage -->
-        <test-method is-config="true" signature="e(org.testng.ITestResult)[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@72967906]" started-at="2022-10-04T16:16:11 IST" name="e" finished-at="2022-10-04T16:16:11 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="e(org.testng.ITestResult)[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@7fa98a66]" started-at="2022-10-07T12:34:07 IST" name="e" finished-at="2022-10-07T12:34:07 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestAutomationPage status=SUCCESS method=TestNG_TESTAUTOMATION.TestAutomationPage()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@72967906] output={null}]]]>
+                <![CDATA[[TestResult name=TestAutomationPage status=SUCCESS method=TestNG_TESTAUTOMATION.TestAutomationPage()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@7fa98a66] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- e -->
-        <test-method is-config="true" signature="RemoveObject()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@72967906]" started-at="2022-10-04T16:16:11 IST" name="RemoveObject" finished-at="2022-10-04T16:16:11 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="RemoveObject()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@7fa98a66]" started-at="2022-10-07T12:34:07 IST" name="RemoveObject" finished-at="2022-10-07T12:34:07 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RemoveObject -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@72967906]" started-at="2022-10-04T16:16:11 IST" name="CloseBrowser" finished-at="2022-10-04T16:16:11 IST" duration-ms="345" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:TestNG.TestNG_TESTAUTOMATION@7fa98a66]" started-at="2022-10-07T12:34:07 IST" name="CloseBrowser" finished-at="2022-10-07T12:34:08 IST" duration-ms="638" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
