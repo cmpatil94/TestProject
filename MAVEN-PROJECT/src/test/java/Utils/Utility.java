@@ -60,18 +60,18 @@ public class Utility {
 	public static void CaptureScreenshot(WebDriver driver , int testID)  throws IOException  {
 		
 	
-	String Date = new SimpleDateFormat("dd-MM-yyyy hh.mm.ss").format(Calendar.getInstance().getTime());
-    
-	String a = Date + ".jpg";
+		String Date = new SimpleDateFormat("dd-MM-yyyy hh.mm.ss").format(Calendar.getInstance().getTime());
+	    
+		String a = Date + ".jpg";
+		
+		System.out.println(a);
+		
+		
+		File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		
+		File Save = new File("C:\\Users\\Admin\\Desktop\\ScreenShot\\" + "Test-" + testID + " - " + a);
 	
-	System.out.println(a);
-	
-	
-	File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-	
-	File Save = new File("C:\\Users\\Admin\\Desktop\\ScreenShot\\" + "Test-" + testID + " - " + a);
-
-	FileHandler.copy(screenshot, Save);
+		FileHandler.copy(screenshot, Save);
 	
 	}
 
@@ -103,7 +103,6 @@ public class Utility {
 		
 		}
 		return CellValue;
-		
 		
 	}
 }

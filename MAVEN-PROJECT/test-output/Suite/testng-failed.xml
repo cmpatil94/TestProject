@@ -7,52 +7,49 @@
   <test thread-count="1" parallel="classes" name="Chrome(failed)">
     <parameter name="BrowserName" value="Chrome"/>
     <classes>
-      <class name="TestNG.TestNG_AMAZON">
+      <class name="TestNG.TestNG_TESTAUTOMATION">
         <methods>
-          <include name="CreatePOMObject"/>
-          <include name="c4"/>
           <include name="e"/>
           <include name="LaunchBrowser"/>
           <include name="RemoveObject"/>
-          <include name="c1"/>
           <include name="CloseBrowser"/>
           <include name="OpenWebSite"/>
+          <include name="TestAutomationPage"/>
+          <include name="CreatePOMObject"/>
         </methods>
-      </class> <!-- TestNG.TestNG_AMAZON -->
+      </class> <!-- TestNG.TestNG_TESTAUTOMATION -->
     </classes>
   </test> <!-- Chrome(failed) -->
   <test thread-count="1" parallel="classes" name="FirefoxTest(failed)">
     <parameter name="BrowserName" value="Firefox"/>
     <classes>
-      <class name="TestNG.TestNG_AMAZON">
+      <class name="TestNG.TestNG_TESTAUTOMATION">
         <methods>
-          <include name="c5"/>
-          <include name="CreatePOMObject"/>
-          <include name="c4"/>
           <include name="e"/>
           <include name="LaunchBrowser"/>
           <include name="RemoveObject"/>
-          <include name="c1"/>
           <include name="CloseBrowser"/>
           <include name="OpenWebSite"/>
+          <include name="TestAutomationPage"/>
+          <include name="CreatePOMObject"/>
         </methods>
-      </class> <!-- TestNG.TestNG_AMAZON -->
+      </class> <!-- TestNG.TestNG_TESTAUTOMATION -->
     </classes>
   </test> <!-- FirefoxTest(failed) -->
   <test thread-count="1" parallel="classes" name="MicrosoftEdgeTest(failed)">
     <parameter name="BrowserName" value="MicrosoftEdge"/>
     <classes>
-      <class name="TestNG.TestNG_AMAZON">
+      <class name="TestNG.TestNG_TESTAUTOMATION">
         <methods>
-          <include name="CreatePOMObject"/>
-          <include name="c4"/>
           <include name="e"/>
           <include name="LaunchBrowser"/>
           <include name="RemoveObject"/>
           <include name="CloseBrowser"/>
           <include name="OpenWebSite"/>
+          <include name="TestAutomationPage"/>
+          <include name="CreatePOMObject"/>
         </methods>
-      </class> <!-- TestNG.TestNG_AMAZON -->
+      </class> <!-- TestNG.TestNG_TESTAUTOMATION -->
     </classes>
   </test> <!-- MicrosoftEdgeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

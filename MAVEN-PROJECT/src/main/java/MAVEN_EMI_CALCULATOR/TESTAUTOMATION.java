@@ -3,6 +3,8 @@ package MAVEN_EMI_CALCULATOR;
 import java.util.List;
 
 import org.openqa.selenium.By;
+
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,8 +14,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public class TESTAUTOMATION {
 	
-	WebDriver driver ;
-	Actions Mouse ;
+	private WebDriver driver ;
+	private Actions Mouse ;
 	
 	
 	@FindBy ( xpath = "//button[@onclick='myFunction()']" ) 
@@ -193,15 +195,5 @@ public class TESTAUTOMATION {
 	{
 		age.sendKeys("27");
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
 }
