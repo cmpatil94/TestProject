@@ -82,7 +82,7 @@ public class FLIPKART_GROCERY {
 
 	public void ClickOnPinCode ()
 	{
-		PinCode.sendKeys("425306");
+		PinCode.sendKeys("400001");
 		PinCode.sendKeys(Keys.ENTER);
 	}
 	

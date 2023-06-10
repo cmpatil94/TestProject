@@ -96,11 +96,15 @@ public static void main(String[] args) throws InterruptedException {
 		
 		testautomation.ClickOnSelectField2();
 		
+		Thread.sleep(5000);
+		
 		testautomation.ClickDragAndDrop();
 		
 		testautomation.DragToTrash();
 		
 		testautomation.DragToTrash2();
+		
+		Thread.sleep(5000);
 		
 		testautomation.ClickResize();
 		
@@ -121,6 +125,7 @@ public static void main(String[] args) throws InterruptedException {
 			System.out.println("FAIL");
 		}
 		
+		driver.close();
 		
 	}
 

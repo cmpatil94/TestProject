@@ -32,7 +32,7 @@ public class FACEBOOK_CREATE_NEW_ACCOUNT {
 	@FindBy ( xpath = "//button[text()='Sign Up']" ) 
 	private WebElement SignUP;
 	
-	
+
 	
 	public FACEBOOK_CREATE_NEW_ACCOUNT (WebDriver driver)
 	{

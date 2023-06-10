@@ -43,7 +43,7 @@ public class TestNG_FLIPKART {
 				driver = Utility.LaunchFirefoxBrowser();
 			}
 			
-			if(BrowserName.equals("MicrosoftEdge"))
+			if(BrowserName.equals("MicrosoftEdge")) 
 			{
 				driver = Utility.LaunchMicrosoftEdgeBrowser();
 			}

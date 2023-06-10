@@ -1,5 +1,7 @@
 package TestNG;
 
+import static org.testng.Assert.assertEquals;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -145,6 +147,8 @@ public class TestNG_TESTAUTOMATION {
 			
 			String URL = driver.getCurrentUrl();
 			System.out.println(URL);
+			
+			assertEquals(URL, "https://testautomationpractice.blogspot.com/");
 			
 			
 			if(URL.equals("https://testautomationpractice.blogspot.com/"))

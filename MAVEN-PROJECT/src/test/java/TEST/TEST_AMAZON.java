@@ -132,11 +132,7 @@ public class TEST_AMAZON {
 		
 		
 		
-		
-		
-		
-		
-		
+			
 
 }
 }

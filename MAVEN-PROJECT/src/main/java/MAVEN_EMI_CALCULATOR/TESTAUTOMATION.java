@@ -21,7 +21,6 @@ public class TESTAUTOMATION {
 	@FindBy ( xpath = "//button[@onclick='myFunction()']" ) 
 	private WebElement Alert;
 	
-	
 	@FindBy ( xpath = "//input[@id='datepicker']" ) 
 	private WebElement Date;
 	
@@ -89,6 +88,8 @@ public class TESTAUTOMATION {
 	public TESTAUTOMATION (WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
+		
+		this.driver = driver ;
 		
 		Mouse = new Actions(driver);
 	}

@@ -3,11 +3,21 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RestAssurance.RestAssuranceProject_TokenizedAuthorization">
+      <class name="TestNG.TestNG_AMAZON">
         <methods>
-          <include name="addBookwithToken"/>
+          <include name="c3"/>
+          <include name="CreatePOMObject"/>
+          <include name="c4"/>
+          <include name="LaunchBrowser"/>
+          <include name="e"/>
+          <include name="RemoveObject"/>
+          <include name="c1"/>
+          <include name="OpenWebSite"/>
+          <include name="c2"/>
+          <include name="c5"/>
+          <include name="CloseBrowser"/>
         </methods>
-      </class> <!-- RestAssurance.RestAssuranceProject_TokenizedAuthorization -->
+      </class> <!-- TestNG.TestNG_AMAZON -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -28,7 +28,7 @@ public class TEST_FLIPKART {
 		
 		System.setProperty("webdriver.chrome.driver", "E:\\INSTALL\\SELENIUM\\chromedriver.exe");
 		
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver(); 
 		
 		driver.get("https://www.Flipkart.com");
 		

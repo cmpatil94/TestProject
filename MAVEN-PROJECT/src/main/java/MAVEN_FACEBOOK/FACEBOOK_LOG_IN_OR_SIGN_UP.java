@@ -12,35 +12,35 @@ public class FACEBOOK_LOG_IN_OR_SIGN_UP {
 		private WebElement UserID;
 		
 		@FindBy ( xpath = "//input[@id='pass']" ) 
-		WebElement Password;
+		private WebElement Password;
 		
 		@FindBy ( xpath = "//button[@type='submit']" ) 
-		WebElement Submit;
+		private WebElement Submit;
 		
 		@FindBy ( xpath = "//a[@aria-label='Marketplace']//span" ) 
-		WebElement MarketPlace;
+		private WebElement MarketPlace;
 		
 		@FindBy ( xpath = "(//a[@aria-label='Groups']//span)[1]" ) 
-		WebElement Group;
+		private WebElement Group;
 		
 		@FindBy ( xpath = "//a[@aria-label='Notifications, 2 unread']//div" ) 
-		WebElement Notification;
+		private WebElement Notification;
 		
 		@FindBy ( xpath = "(//div[@aria-label='Messenger']//div)[1]" ) 
-		WebElement Messenger;
+		private WebElement Messenger;
 		
 		@FindBy ( xpath = "//input[@placeholder='Search Facebook']" ) 
-		WebElement Search;
+		private WebElement Search;
 		
 		@FindBy ( xpath = "//a[@aria-label='Home']//div" ) 
-		WebElement Home;
+		private WebElement Home;
 		
 		
 		@FindBy ( xpath = "(//a[text()='Forgotten password?'])[2]" ) 
-		WebElement ForgotPassword;
+		private WebElement ForgotPassword;
 		
 		@FindBy ( xpath = "//a[@class='_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy']" ) 
-		WebElement CreateNewAccount;
+		private WebElement CreateNewAccount;
 	
 		
 		

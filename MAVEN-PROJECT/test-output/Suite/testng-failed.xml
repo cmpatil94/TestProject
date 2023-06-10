@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="extendReport.ExtentTestNGIReporterListener"/>
   </listeners>
-  <test thread-count="1" parallel="classes" name="Chrome(failed)">
+  <test thread-count="1" parallel="classes" name="ChromeTest(failed)">
     <parameter name="BrowserName" value="Chrome"/>
     <classes>
       <class name="TestNG.TestNG_TESTAUTOMATION">
@@ -19,37 +19,5 @@
         </methods>
       </class> <!-- TestNG.TestNG_TESTAUTOMATION -->
     </classes>
-  </test> <!-- Chrome(failed) -->
-  <test thread-count="1" parallel="classes" name="FirefoxTest(failed)">
-    <parameter name="BrowserName" value="Firefox"/>
-    <classes>
-      <class name="TestNG.TestNG_TESTAUTOMATION">
-        <methods>
-          <include name="e"/>
-          <include name="LaunchBrowser"/>
-          <include name="RemoveObject"/>
-          <include name="CloseBrowser"/>
-          <include name="OpenWebSite"/>
-          <include name="TestAutomationPage"/>
-          <include name="CreatePOMObject"/>
-        </methods>
-      </class> <!-- TestNG.TestNG_TESTAUTOMATION -->
-    </classes>
-  </test> <!-- FirefoxTest(failed) -->
-  <test thread-count="1" parallel="classes" name="MicrosoftEdgeTest(failed)">
-    <parameter name="BrowserName" value="MicrosoftEdge"/>
-    <classes>
-      <class name="TestNG.TestNG_TESTAUTOMATION">
-        <methods>
-          <include name="e"/>
-          <include name="LaunchBrowser"/>
-          <include name="RemoveObject"/>
-          <include name="CloseBrowser"/>
-          <include name="OpenWebSite"/>
-          <include name="TestAutomationPage"/>
-          <include name="CreatePOMObject"/>
-        </methods>
-      </class> <!-- TestNG.TestNG_TESTAUTOMATION -->
-    </classes>
-  </test> <!-- MicrosoftEdgeTest(failed) -->
+  </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
